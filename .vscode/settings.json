@@ -1,0 +1,12 @@
+{
+    "python.analysis.autoImportCompletions": true,
+    "git.ignoredRepositories": [],
+    "explorer.excludeGitIgnore": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/venv": true,
+        "**/sign_language_env": true
+    }
+}
