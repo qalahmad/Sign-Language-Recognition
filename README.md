@@ -1,10 +1,11 @@
-
 # ✨ Sign Language Recognition
+
 Real-time sign language recognition using computer vision and deep learning. (Eggplant Engineers)
 
 ---
 
 ## 📋 Table of Contents
+
 - [Prerequisites](#-prerequisites)
 - [Installation](#-installation)
 - [Usage](#-usage)
@@ -15,6 +16,7 @@ Real-time sign language recognition using computer vision and deep learning. (Eg
 ---
 
 ## 🔧 Prerequisites
+
 Ensure you have the following installed before running the program:
 
 - Python **3.8+** (Tested on **3.10.11** and **3.12.8**)
@@ -24,20 +26,22 @@ Ensure you have the following installed before running the program:
 ---
 
 ## 📦 Dependencies
+
 The following Python packages will be automatically installed:
 
-| Package       | Description                         |
-|--------------|---------------------------------|
-| TensorFlow   | Machine learning framework     |
-| OpenCV       | Computer vision library        |
+| Package      | Description                     |
+| ------------ | ------------------------------- |
+| TensorFlow   | Machine learning framework      |
+| OpenCV       | Computer vision library         |
 | MediaPipe    | Hand tracking & pose estimation |
-| scikit-learn | Machine learning utilities     |
-| matplotlib   | Data visualization             |
-| numpy        | Numerical computing            |
+| scikit-learn | Machine learning utilities      |
+| matplotlib   | Data visualization              |
+| numpy        | Numerical computing             |
 
 ---
 
 ## 💻 Installation
+
 1. **Clone the Repository**
    ```sh
    git clone https://ourrepo.git
@@ -57,6 +61,7 @@ The following Python packages will be automatically installed:
 ---
 
 ## 🚀 Usage
+
 1. **Activate Virtual Environment**
    ```sh
    source venv/bin/activate  # On macOS/Linux
@@ -75,6 +80,7 @@ The following Python packages will be automatically installed:
 ---
 
 ## 📂 Folder Structure
+
 ```
 sign_language_detection/
 │── data/                # Collected keypoint sequences
@@ -93,6 +99,7 @@ sign_language_detection/
 ---
 
 ## 👥 Contributing
+
 We welcome contributions! Follow these steps to contribute:
 
 1. **Fork the repository**
@@ -113,8 +120,7 @@ We welcome contributions! Follow these steps to contribute:
 ---
 
 ## 📜 License
+
 This project is licensed under the **MIT License**.
 
 ---
-
-
