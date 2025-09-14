@@ -116,6 +116,3 @@ Contributions are welcome, but please note that this is a **work in progress** a
 - Submit a pull request with clear documentation of changes  
 
 ---
-
-## License
-This project is licensed under the **MIT License**.  
