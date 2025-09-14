@@ -1,120 +1,121 @@
+# Sign Language Recognition (Work in Progress)
 
-# ✨ Sign Language Recognition
-Real-time sign language recognition using computer vision and deep learning. (Eggplant Engineers)
+This repository is an **active work in progress** focused on building a real-time sign language recognition system using computer vision and deep learning techniques.  
+The long-term goal of this project is to **develop a transcription extension for video calling services**, enabling seamless accessibility by converting sign language into text during live conversations.  
 
----
-
-## 📋 Table of Contents
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Folder Structure](#-folder-structure)
-- [Contributing](#-contributing)
-- [License](#-license)
+While the current implementation is still in its early stages, progress is ongoing. This document outlines the present state of development and the roadmap toward full integration into video conferencing platforms.  
 
 ---
 
-## 🔧 Prerequisites
-Ensure you have the following installed before running the program:
-
-- Python **3.8+** (Tested on **3.10.11** and **3.12.8**)
-- Webcam (for real-time recognition)
-- `pip` (Python package manager)
-
----
-
-## 📦 Dependencies
-The following Python packages will be automatically installed:
-
-| Package       | Description                         |
-|--------------|---------------------------------|
-| TensorFlow   | Machine learning framework     |
-| OpenCV       | Computer vision library        |
-| MediaPipe    | Hand tracking & pose estimation |
-| scikit-learn | Machine learning utilities     |
-| matplotlib   | Data visualization             |
-| numpy        | Numerical computing            |
+## Table of Contents
+- [Project Overview](#project-overview)  
+- [Prerequisites](#prerequisites)  
+- [Installation](#installation)  
+- [Usage](#usage)  
+- [Folder Structure](#folder-structure)  
+- [Development Roadmap](#development-roadmap)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
 ---
 
-## 💻 Installation
-1. **Clone the Repository**
+## Project Overview
+The project leverages **TensorFlow**, **MediaPipe**, and related libraries to detect, process, and classify hand gestures in real time.  
+Initial work includes building and training LSTM models on collected data, testing webcam-based recognition, and iterating on detection accuracy.  
+
+This forms the foundation for the broader objective: integrating sign language recognition into live **video calling platforms** (e.g., Zoom, Google Meet, Microsoft Teams) as a transcription extension.  
+
+---
+
+## Prerequisites
+- Python **3.8+** (tested on **3.10.11** and **3.12.8**)  
+- Webcam for real-time recognition  
+- `pip` for package management  
+
+---
+
+## Installation
+1. Clone the repository:  
    ```sh
    git clone https://ourrepo.git
    cd ourrepo
    ```
-2. **Create & Activate Virtual Environment**
+2. Create and activate a virtual environment:  
    ```sh
    python -m venv venv
-   source venv/bin/activate  # On macOS/Linux
-   venv\Scripts\activate  # On Windows
+   source venv/bin/activate    # macOS/Linux
+   venv\Scripts\activate       # Windows
    ```
-3. **Install Dependencies**
+3. Install dependencies:  
    ```sh
    pip install -r requirements.txt
    ```
 
 ---
 
-## 🚀 Usage
-1. **Activate Virtual Environment**
-   ```sh
-   source venv/bin/activate  # On macOS/Linux
-   venv\Scripts\activate  # On Windows
-   ```
-2. **Run the Program**
+## Usage
+1. Activate your virtual environment.  
+2. Run the collection or detection scripts, for example:  
    ```sh
    python collect_data.py
-   ```
-3. **Controls**
-   - Press **'q'** to quit the webcam window
-   - Use **Ctrl+C** in the terminal to stop the program
-
-**Note:** Ensure your **webcam is connected and accessible** before running the program.
+   python detect.py
+   ```  
+3. Controls:  
+   - Press **q** to close the webcam window.  
+   - Use **Ctrl+C** in terminal to exit the process.  
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 ```
 sign_language_detection/
-│── data/                # Collected keypoint sequences
-│── models/              # Saved LSTM models
-│── utils/               # Helper functions
-│   ├── mediapipe_utils.py  # MediaPipe detection/rendering
-│   ├── data_utils.py       # Keypoint extraction
-│   └── model_utils.py      # LSTM model builder
-│── collect_data.py       # Data collection script
-│── train.py              # Model training script
-│── detect.py             # Real-time detection script
-│── test_webcam.py        # Webcam test script
-│── requirements.txt      # Dependencies
+│── data/                 # Collected keypoint sequences
+│── models/               # Trained LSTM models
+│── utils/                # Helper functions
+│   ├── mediapipe_utils.py
+│   ├── data_utils.py
+│   └── model_utils.py
+│── collect_data.py        # Data collection script
+│── train.py               # Model training script
+│── detect.py              # Real-time detection script
+│── test_webcam.py         # Webcam test script
+│── requirements.txt       # Dependencies
 ```
 
 ---
 
-## 👥 Contributing
-We welcome contributions! Follow these steps to contribute:
+## Development Roadmap
+This project is under **active development**. The following milestones represent the path forward:
 
-1. **Fork the repository**
-2. **Create a new branch**
-   ```sh
-   git checkout -b feature/amazing_feature
-   ```
-3. **Commit your changes**
-   ```sh
-   git commit -m 'Add amazing feature'
-   ```
-4. **Push to the branch**
-   ```sh
-   git push origin feature/amazing_feature
-   ```
-5. **Open a Pull Request**
+1. **Data Pipeline**  
+   - Expand the dataset with diverse sign language gestures.  
+   - Improve preprocessing for better feature extraction.  
+
+2. **Model Improvements**  
+   - Train advanced architectures (beyond LSTMs) for improved accuracy.  
+   - Benchmark performance across multiple environments.  
+
+3. **System Integration**  
+   - Develop APIs to expose the recognition engine.  
+   - Create a local extension capable of running during video calls.  
+
+4. **Transcription Layer**  
+   - Convert recognized gestures into text output in real time.  
+   - Ensure compatibility with major video conferencing platforms.  
+
+5. **Accessibility Focus**  
+   - Optimize for latency and accuracy.  
+   - Design a user-friendly interface for seamless deployment.  
 
 ---
 
-## 📜 License
-This project is licensed under the **MIT License**.
+## Contributing
+Contributions are welcome, but please note that this is a **work in progress** and the codebase may evolve quickly.  
+- Fork the repository  
+- Create a feature branch  
+- Submit a pull request with clear documentation of changes  
 
 ---
 
-
+## License
+This project is licensed under the **MIT License**.  
